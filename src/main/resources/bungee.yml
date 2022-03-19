@@ -1,0 +1,5 @@
+name: FBAuth
+version: '${project.version}'
+main: me.swat1x.fbauth.AuthPlugin
+author: swat1x
+depends: [ VK-API ]
