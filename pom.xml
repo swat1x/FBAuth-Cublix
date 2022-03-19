@@ -79,12 +79,13 @@
             <artifactId>VK-API-Spigot-Bungee</artifactId>
             <version>0.3.0-Snapshot</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-crypto</artifactId>
-            <version>5.6.1</version>
-            <scope>provided</scope>
+            <version>5.6.2</version>
         </dependency>
+
         <dependency>
             <groupId>com.vk.api</groupId>
             <artifactId>sdk</artifactId>
@@ -106,6 +107,28 @@
             <artifactId>bungeecord-api</artifactId>
             <version>1.16-R0.5-SNAPSHOT</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.0.1-jre</version>
+            <scope>compile</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>3.0.3</version>
         </dependency>
     </dependencies>
 </project>

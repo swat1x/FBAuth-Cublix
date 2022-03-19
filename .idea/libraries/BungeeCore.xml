@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="HikariCP-4.0.3">
+  <library name="BungeeCore">
     <CLASSES>
-      <root url="jar://D:/Desktop/db/HikariCP-4.0.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Cublix/bungee/plugins/BungeeCore.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

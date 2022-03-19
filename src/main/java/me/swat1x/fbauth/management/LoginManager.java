@@ -14,6 +14,8 @@ import net.md_5.bungee.api.Title;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Plugin;
+import ru.cublix.bungee.BungeeCore;
+import ru.cublix.connection.protocol.packets.Packet2PlayerConnect;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
@@ -104,7 +106,10 @@ public class LoginManager {
         } else {
             player.sendTitle(linkTitle);
             player.sendMessage(authManager.getLinkMessage());
+
         }
+
+        BungeeCore.getClient().sendPacket(new Packet2PlayerConnect(player.getName(),player.getAddress().getHostName()));
     }
 
     public void login(ProxiedPlayer player) {
